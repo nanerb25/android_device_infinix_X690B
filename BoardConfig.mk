@@ -97,6 +97,11 @@ BOARD_MAIN_PARTITION_LIST := \
 # Assert
 TARGET_OTA_ASSERT_DEVICE := X682B,X682C
 
+# Verified Boot
+BOARD_AVB_ENABLE := true
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 2
+
 # Non-SAR on Android 10 means the presence of stage-1 ramdisk
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
 TARGET_COPY_OUT_VENDOR := vendor
