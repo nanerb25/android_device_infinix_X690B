@@ -127,6 +127,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     power.mt6761
 
+# Properties
+-include $(DEVICE_PATH)/system.prop
+PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.mt6761.rc \
