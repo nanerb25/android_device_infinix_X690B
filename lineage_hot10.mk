@@ -30,7 +30,7 @@ PRODUCT_DEVICE := hot10
 PRODUCT_NAME := lineage_hot10
 PRODUCT_BRAND := Infinix
 PRODUCT_MODEL := Infinix Hot 10
-PRODUCT_MANUFACTURER := infinix
+PRODUCT_MANUFACTURER := Infinix
 
 PRODUCT_GMS_CLIENTID_BASE := android-infinix
 TARGET_VENDOR := infinix
