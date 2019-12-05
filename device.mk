@@ -99,8 +99,6 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml
 
-#LTS Permissions
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/permissions/lts-privapp-permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/lts-privapp-permissions.xml \
-    $(LOCAL_PATH)/permissions/lts-privapp-permissions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/lts-privapp-permissions.xml \
-    $(LOCAL_PATH)/permissions/lts-privapp-permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/lts-privapp-permissions.xml
+# RcsService
+PRODUCT_PACKAGES += \
+    RcsService
