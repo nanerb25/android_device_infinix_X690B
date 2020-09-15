@@ -33,3 +33,10 @@ android_app {
         "privapp-permissions_org.lineageos.dt2w.hot10"
     ]
 }
+
+prebuilt_etc {
+    name: "privapp-permissions_org.lineageos.dt2w.hot10",
+    sub_dir: "permissions",
+    src: "privapp-permissions_org.lineageos.dt2w.hot10.xml",
+    filename_from_src: true,
+}
