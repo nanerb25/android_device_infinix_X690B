@@ -1,6 +1,5 @@
 # MTK platform .rc configure
 
-
 import /vendor/etc/init/hw/init.connectivity.rc
 import /vendor/etc/init/hw/init.mt6761.usb.rc
 import /vendor/etc/init/hw/init.project.rc
