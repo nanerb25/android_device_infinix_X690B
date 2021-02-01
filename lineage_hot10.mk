@@ -31,3 +31,11 @@ PRODUCT_NAME := lineage_hot10
 PRODUCT_BRAND := Infinix
 PRODUCT_MODEL := Infinix Hot 10
 PRODUCT_MANUFACTURER := infinix
+
+PRODUCT_GMS_CLIENTID_BASE := android-infinix
+TARGET_VENDOR := infinix
+TARGET_VENDOR_PRODUCT_NAME := hot10
+PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="sys_tssi_64_infinix-user 10 QP1A.190711.020 50086 release-keys"
+
+# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
+BUILD_FINGERPRINT := Infinix/TSSI/FULL-64:10/QP1A.190711.020/201109V254:user/release-keys
