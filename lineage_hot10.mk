@@ -14,6 +14,13 @@
 # limitations under the License.
 #
 
+# Release name
+PRODUCT_RELEASE_NAME := Infinix Hot 10
+
+# Boot animation
+TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 2340
+
 # Inherit from merlin device makefile
 $(call inherit-product, device/infinix/hot10/device.mk)
 
