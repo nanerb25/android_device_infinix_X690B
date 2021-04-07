@@ -51,3 +51,7 @@ etc/init/kpoc_charger.rc
 lib/libshowlogo.so
 lib/libsysenv_system.so
 lib64/libsysenv_system.so
+
+# Fingerprint
+bin/hw/android.hardware.biometrics.fingerprint@2.1-service
+etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
