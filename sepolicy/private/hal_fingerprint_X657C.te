@@ -2,9 +2,7 @@ type hal_fingerprint_X657C, domain;
 hal_client_domain(hal_fingerprint_X657C, hal_fingerprint)
 hal_server_domain(hal_fingerprint_X657C, hal_fingerprint)
 
-type hal_fingerprint_X657C_exec, system_file_type, vendor_file_type, exec_type, file_type;
+type hal_fingerprint_X657C_exec, system_file_type, exec_type, file_type;
 init_daemon_domain(hal_fingerprint_X657C)
 
 binder_call(hal_fingerprint_X657C, hal_fingerprint_X657C)
-
-allow hal_fingerprint_X657C tee_device:chr_file getattr;
