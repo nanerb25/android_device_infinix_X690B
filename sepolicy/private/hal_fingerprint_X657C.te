@@ -1,4 +1,5 @@
 type hal_fingerprint_X657C, domain;
+typeattribute hal_fingerprint_X657C data_between_core_and_vendor_violators;
 hal_client_domain(hal_fingerprint_X657C, hal_fingerprint)
 hal_server_domain(hal_fingerprint_X657C, hal_fingerprint)
 
