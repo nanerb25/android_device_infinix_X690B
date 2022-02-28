@@ -102,6 +102,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libsuspend
 
+# Libxml2
+PRODUCT_PACKAGES += \
+    libxml2.vendor
+
 # Light
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.X657C
