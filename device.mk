@@ -102,6 +102,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libsuspend
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    libkeymaster4.vendor:32 \
+    libkeymaster4support.vendor:32 \
+    libkeymaster_portable.vendor:32 \
+    libkeymaster_messages.vendor:32 \
+    libsoft_attestation_cert.vendor:32 \
+    libpuresoftkeymasterdevice.vendor:32
+
 # Libxml2
 PRODUCT_PACKAGES += \
     libxml2.vendor
