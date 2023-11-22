@@ -14,19 +14,13 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/infinix/hot10
+DEVICE_PATH := device/infinix/X657C
 
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
-# Enable updating of APEXes
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-
-# Dalvik
-$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
-
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/infinix/hot10/hot10-vendor.mk)
+$(call inherit-product, vendor/infinix/X657C/X657C-vendor.mk)
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_configuration.xml
@@ -53,17 +47,17 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    init.mt6768.rc \
+    init.mt6761.rc \
     init.safailnet.rc \
-    fstab.mt6768
+    fstab.mt6761
 
 # DT2W
 PRODUCT_PACKAGES += \
-    DT2W-Service-Hot10
+    DT2W-Service-X657C
 
 # Fstab
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/rootdir/etc/fstab.mt6768:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6768
+    $(DEVICE_PATH)/rootdir/etc/fstab.mt6761:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6761
 
 # Keylayout
 PRODUCT_COPY_FILES += \
@@ -81,7 +75,7 @@ PRODUCT_PACKAGES += \
     
 # Light
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.hot10
+    android.hardware.light@2.0-service.X657C
 
 # NFC stack (AOSP)
 PRODUCT_PACKAGES += \

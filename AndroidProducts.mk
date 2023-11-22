@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/lineage_hot10.mk
+   $(LOCAL_DIR)/lineage_X657C.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_hot10-user \
-    lineage_hot10-userdebug \
-    lineage_hot10-eng
+    lineage_X657C-user \
+    lineage_X657C-userdebug \
+    lineage_X657C-eng

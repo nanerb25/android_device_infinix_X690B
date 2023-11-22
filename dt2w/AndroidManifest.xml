@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.lineageos.dt2w.hot10"
+    package="org.lineageos.dt2w.X657C"
     android:versionCode="1"
     android:versionName="1.0"
     android:sharedUserId="android.uid.system">
@@ -18,6 +18,6 @@
             </intent-filter>
         </receiver>
 
-        <service android:enabled="true" android:name=".DT2WServiceHot10" />
+        <service android:enabled="true" android:name=".DT2WServiceX657C" />
     </application>
 </manifest>

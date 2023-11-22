@@ -16,7 +16,7 @@
  */
 
 android_app {
-    name: "DT2W-Service-Hot10",
+    name: "DT2W-Service-X657C",
 
     srcs: ["src/**/*.java"],
     resource_dirs: ["res"],
@@ -30,13 +30,13 @@ android_app {
     },
 
     required: [
-        "privapp-permissions_org.lineageos.dt2w.hot10"
+        "privapp-permissions_org.lineageos.dt2w.X657C"
     ]
 }
 
 prebuilt_etc {
-    name: "privapp-permissions_org.lineageos.dt2w.hot10",
+    name: "privapp-permissions_org.lineageos.dt2w.X657C",
     sub_dir: "permissions",
-    src: "privapp-permissions_org.lineageos.dt2w.hot10.xml",
+    src: "privapp-permissions_org.lineageos.dt2w.X657C.xml",
     filename_from_src: true,
 }

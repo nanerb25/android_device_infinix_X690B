@@ -14,9 +14,9 @@
 // limitations under the License.
 //
 cc_library_static {
-    name: "libinit_hot10",
+    name: "libinit_X657C",
     recovery_available: true,
-    srcs: ["init_hot10.cpp"],
+    srcs: ["init_X657C.cpp"],
     include_dirs: [
         "system/core/base/include",
         "system/core/init"
