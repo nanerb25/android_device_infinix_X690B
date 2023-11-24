@@ -68,7 +68,7 @@ debug.sf.enable_hwc_vds=0
 persist.internalAntenna.enable=true
 vendor.rild.libargs=-d /dev/ttyC0
 vendor.rild.libpath=mtk-ril.so
-ro.telephony.sim.count=3
+ro.telephony.sim.count=2
 persist.vendor.radio.tsd.multisimmode=2
 persist.radio.multisim.config=dsds
 
