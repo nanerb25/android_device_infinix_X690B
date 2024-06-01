@@ -23,13 +23,13 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Flag specifying whether VoLTE is available on device -->
-     <bool name="config_device_volte_available">true</bool>
+    <bool name="config_device_volte_available">false</bool>
 
     <!-- Flag specifying whether VT is available on device -->
-     <bool name="config_device_vt_available">true</bool>
+    <bool name="config_device_vt_available">false</bool>
 
     <!-- Flag specifying whether WFC over IMS is available on device -->
-    <bool name="config_device_wfc_ims_available">true</bool>     
+    <bool name="config_device_wfc_ims_available">false</bool>  
 
     <!-- If true, the doze component is not started until after the screen has been turned off
          and the screen off animation has been performed. -->
@@ -44,7 +44,7 @@
     <bool name="config_showNavigationBar">true</bool>         
 
     <!--  Whether Multiuser UI should be shown -->
-     <bool name="config_enableMultiUserUI">true</bool>
+    <bool name="config_enableMultiUserUI">false</bool>
 
     <!-- Whether the display cutout region of the main built-in display should be forced to
          black in software (to avoid aliasing or emulate a cutout that is not physically existent).
@@ -68,9 +68,6 @@
     <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently in hardware. -->
      <bool name="config_setColorTransformAccelerated">true</bool>
 
-    <!-- Whether device supports double tap to wake -->
-     <bool name="config_supportDoubleTapWake">true</bool>
-
     <!-- Indicate whether to allow the device to suspend when the screen is off
          due to the proximity sensor.  This resource should only be set to true
          if the sensor HAL correctly handles the proximity sensor as a wake-up source.
@@ -82,15 +79,6 @@
          state changes. Voice radio tech change will always trigger an update of
          phone object irrespective of this config -->
      <bool name="config_switch_phone_on_voice_reg_state_change">false</bool>
-     
-    <!-- Set this to true to enable the platform's auto-power-save modes like doze and
-         app standby.  These are not enabled by default because they require a standard
-         cloud-to-device messaging service for apps to interact correctly with the modes
-         (such as to be able to deliver an instant message to the device even when it is
-         dozing).  This should be enabled if you have such services and expect apps to
-         correctly use them when installed on your device.  Otherwise, keep this disabled
-         so that applications can still use their own mechanisms. -->
-    <bool name="config_enableAutoPowerModes">true</bool>     
 
     <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
      <bool name="config_unplugTurnsOnScreen">true</bool>
@@ -120,7 +108,7 @@
      <integer name="config_longPressOnHomeBehavior">0</integer>
 
     <!--  Maximum number of supported users -->
-     <integer name="config_multiuserMaximumUsers">4</integer>
+     <integer name="config_multiuserMaximumUsers">1</integer>
 
     <!-- Default value for led color when battery is fully charged -->
      <integer name="config_notificationsBatteryFullARGB">0xFF00FF00</integer>
@@ -472,7 +460,7 @@
          appended after the path string to interpret coordinates in dp instead of px units.
          Note that a physical cutout should be configured in pixels for the best results.
     -->
-    <string name="config_mainBuiltInDisplayCutout">M -180,0 L -180,40 L -140,40 L -140,0 Z @dp</string>    
+    <string name="config_mainBuiltInDisplayCutout">M -40,0 L -40,36 L 40,36 L 40,0 Z @dp</string>
 
     <!-- Array of ConnectivityManager.TYPE_xxxx values allowable for tethering -->
     <!-- Common options are [1, 4] for TYPE_WIFI and TYPE_MOBILE_DUN or
@@ -524,29 +512,23 @@
     <string-array name="networkAttributes">
         <item>wifi,1,1,1,-1,true</item>
         <item>mobile,0,0,0,-1,true</item>
-        <item>mobile_mms,2,0,2,300000,true</item>
+        <item>mobile_mms,2,0,2,60000,true</item>
         <item>mobile_supl,3,0,2,60000,true</item>
         <item>mobile_dun,4,0,2,60000,true</item>
         <item>mobile_hipri,5,0,3,60000,true</item>
         <item>mobile_fota,10,0,2,60000,true</item>
         <item>mobile_ims,11,0,-1,-1,true</item>
         <item>mobile_cbs,12,0,2,60000,true</item>
-        <item>bluetooth,7,7,2,-1,true</item>
-        <item>ethernet,9,9,4,-1,true</item>
         <item>wifi_p2p,13,1,0,-1,true</item>
         <item>mobile_ia,14,0,2,-1,true</item>
         <item>mobile_emergency,15,0,2,-1,true</item>
-        <item>mobile_dm,20,0,3,60000,true</item>
         <item>mobile_wap,21,0,3,60000,true</item>
-        <item>mobile_net,22,0,3,60000,true</item>
-        <item>mobile_cmmail,23,0,3,60000,true</item>
-        <item>mobile_rcse,24,0,3,60000,true</item>
         <item>mobile_xcap,25,0,3,60000,true</item>
         <item>mobile_rcs,26,0,3,60000,true</item>
         <item>mobile_bip,27,0,3,60000,true</item>
         <item>mobile_vsim,28,0,-1,60000,true</item>
-        <item>mobile_preempt,29,0,9,60000,true</item>
-        <item>wifi_slave,40,1,0,-1,true</item>
+        <item>mobile_mcx,1001,0,3,60000,true</item>
+        <item>ethernet,9,9,9,-1,true</item>
     </string-array>
 
     <!-- This string array should be overridden by the device to present a list of radio
