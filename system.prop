@@ -40,9 +40,6 @@ sys.ipo.disable=1
 # Kernel
 ro.kernel.zio=38,108,105,16
 
-# MDLOG
-persist.sys.mdlog_dumpback=2
-
 # Media
 media.stagefright.thumbnail.prefer_hw_codecs=true
 
@@ -58,6 +55,7 @@ ro.mtk_perf_simple_start_win=1
 sys.ipo.pwrdncap=2
 
 # SurfaceFlinger
+ro.config.avoid_gfx_accel=true
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3 
 ro.surface_flinger.running_without_sync_framework=true
 ro.surface_flinger.vsync_event_phase_offset_ns=2000000 
