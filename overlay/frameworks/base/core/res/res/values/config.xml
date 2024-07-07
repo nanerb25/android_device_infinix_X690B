@@ -450,12 +450,11 @@
     <string name="config_mainBuiltInDisplayCutout">M -40,0 L -40,36 L 40,36 L 40,0 Z @dp</string>
 
     <!-- Height of the status bar -->
-    <dimen name="rounded_corner_radius_bottom">128.0px</dimen>
-    <dimen name="rounded_corner_radius_bottom_adjustment">46.0px</dimen>
-    <dimen name="rounded_corner_radius_top">144.0px</dimen>
-    <dimen name="rounded_corner_radius_top_adjustment">79.0px</dimen>
-    <dimen name="status_bar_height_landscape">24dp</dimen>
-    <dimen name="status_bar_height_portrait">32.0dip</dimen>
+    <dimen name="status_bar_padding_start">3.0px</dimen>
+    <dimen name="status_bar_padding_end">3.0px</dimen>
+    <dimen name="status_bar_height_portrait">49.0px</dimen>
+    <dimen name="rounded_corner_radius_bottom">68.0px</dimen>
+    <dimen name="rounded_corner_radius_top">68.0px</dimen>
 
     <!-- Array of ConnectivityManager.TYPE_xxxx values allowable for tethering -->
     <!-- Common options are [1, 4] for TYPE_WIFI and TYPE_MOBILE_DUN or
