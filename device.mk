@@ -55,6 +55,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/rootdir/etc/fstab.mt6761:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6761
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health-service.X657C \
+    android.hardware.health-service.X657C-recovery
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0_system \
@@ -80,8 +85,7 @@ PRODUCT_COPY_FILES += \
 
 # KPOC
 PRODUCT_PACKAGES += \
-    libsuspend \
-    android.hardware.health@2.0
+    libsuspend
 
 # Light
 PRODUCT_PACKAGES += \
