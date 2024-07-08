@@ -29,20 +29,17 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_configuration.xml
 
-# Camera
-PRODUCT_PACKAGES += \
-    GoogleCameraGo
-
 # Bluetooth
 PRODUCT_PACKAGES += \
     libldacBT_dec
 
-# Soong namespaces
-PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
+# Camera
+PRODUCT_PACKAGES += \
+    GoogleCameraGo
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay
+# DT2W
+PRODUCT_PACKAGES += \
+    DT2W-Service-X657C
 
 # Dynamic Partitions 
 PRODUCT_TARGET_VNDK_VERSION := 29
@@ -50,50 +47,18 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
-# Power
+# fastbootd
 PRODUCT_PACKAGES += \
-    power.mt6761
-
-# Ramdisk
-PRODUCT_PACKAGES += \
-    init.mt6761.rc \
-    init.safailnet.rc \
-    fstab.mt6761
-
-# DT2W
-PRODUCT_PACKAGES += \
-    DT2W-Service-X657C
+    fastbootd
 
 # Fstab
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/rootdir/etc/fstab.mt6761:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6761
 
-# Keylayout
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-fpc.kl \
-    $(DEVICE_PATH)/configs/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-goodix.kl
-
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0_system \
     android.hidl.manager@1.0_system
-
-# fastbootd
-PRODUCT_PACKAGES += \
-    fastbootd
-    
-# Light
-PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.X657C
-
-# NFC stack (AOSP)
-PRODUCT_PACKAGES += \
-    NfcNci
-
-# KPOC
-PRODUCT_PACKAGES += \
-    libsuspend \
-    android.hardware.health@2.0
 
 # IMS
 PRODUCT_BOOT_JARS += \
@@ -108,9 +73,40 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml
 
+# Keylayout
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-fpc.kl \
+    $(DEVICE_PATH)/configs/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-goodix.kl
+
+# KPOC
+PRODUCT_PACKAGES += \
+    libsuspend \
+    android.hardware.health@2.0
+
+# Light
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.X657C
+
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(DEVICE_PATH)/overlay
+
+# Power
+PRODUCT_PACKAGES += \
+    power.mt6761
+
+# Ramdisk
+PRODUCT_PACKAGES += \
+    init.mt6761.rc \
+    init.safailnet.rc \
+    fstab.mt6761
+
 # RcsService
 PRODUCT_PACKAGES += \
     RcsService
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
 # Trust HAL
 PRODUCT_PACKAGES += \
