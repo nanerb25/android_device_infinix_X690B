@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.light@2.0-service.X657C"
+#define LOG_TAG "android.hardware.light@2.0-service.X690B"
 
 #include <hidl/HidlTransportSupport.h>
 

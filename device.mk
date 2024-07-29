@@ -14,16 +14,16 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/infinix/X657C
+DEVICE_PATH := device/infinix/X690BC
 
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/infinix/X657C/X657C-vendor.mk)
+$(call inherit-product, vendor/infinix/X690B/X690B-vendor.mk)
 
 # Setup dalvik vm configs
-$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -54,9 +54,9 @@ PRODUCT_PACKAGES += \
 
 # DT2W
 PRODUCT_PACKAGES += \
-    DT2W-Service-X657C
+    DT2W-Service-X690B
 
-# Dynamic Partitions 
+# Dynamic Partitions
 PRODUCT_TARGET_VNDK_VERSION := 29
 PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_BUILD_SUPER_PARTITION := false
@@ -68,12 +68,12 @@ PRODUCT_PACKAGES += \
 
 # Fstab
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/rootdir/etc/fstab.mt6761:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6761
+    $(DEVICE_PATH)/rootdir/etc/fstab.mt6768:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6768
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health-service.X657C \
-    android.hardware.health-service.X657C-recovery
+    android.hardware.health-service.X690BC \
+    android.hardware.health-service.X690B-recovery
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -117,7 +117,7 @@ PRODUCT_PACKAGES += \
 
 # Light
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.X657C
+    android.hardware.light@2.0-service.X690B
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -125,7 +125,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Power
 PRODUCT_PACKAGES += \
-    power.mt6761
+    power.mt6768
 
 # Properties
 -include $(DEVICE_PATH)/system.prop
@@ -133,9 +133,9 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    init.mt6761.rc \
+    init.mt6768.rc \
     init.safailnet.rc \
-    fstab.mt6761
+    fstab.mt6769
 
 # RcsService
 PRODUCT_PACKAGES += \

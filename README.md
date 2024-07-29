@@ -1,27 +1,23 @@
-# Device Tree for Infinix Smart 5 - X657C
+# Device Tree for Infinix Note 7 - X690B - X690
 
 ## Device specifications
 
 | Feature                 | Specification                                                   |
 | :---------------------- | :---------------------------------------------------------------|
-| Chipset                 | Mediatek Helio A20 MT6761D (12nm)                               |
-| CPU                     | Quad-core 1.8 GHz Cortex-A53                                    |
-| GPU                     | PowerVR GE8320                                                  |
-| Memory                  | 2/3 GB                                                          |
-| Shipped Android Version | 10.0 Go Edition                                                 |
+| Chipset                 | Mediatek Helio G70 MT6768 (12nm)                                |
+| CPU                     | Octa-core (2x2.0 GHz Cortex-A75 & 6x1.7 GHz Cortex-A55          |
+| GPU                     | Mali-G52 2EEMC2                                                 |
+| Memory                  | 4/6 GB                                                          |
+| Shipped Android Version | 10.0                                                            |
 | Storage                 | 32/64 GB                                                        |
 | SIM                     | Dual SIM (Nano-SIM, dual stand-by)                              |
 | MicroSD                 | Dedicated Slot                                                  |
 | Battery                 | 5000 mAh Li-Po (non-removable)                                  |
-| Dimensions              | 720 x 1600 pixels, 20:9 ratio (~266 ppi density)                |
-| Display                 | 6.6 inches, 105.2 cm2 (~83.2% screen-to-body ratio)             |
-| Rear Camera 1           | 8MP(X657C)/13 MP, (wide), AF                                    |
-| Rear Camera 2           | QVGA            					                            |
-| Rear Camera 3           | QVGA(X657B)                                    	                |
-| Front Camera            | 8 MP (wide)                                                     |
+| Dimensions              | 720 x 1640 pixels, (~258 ppi density)                           |
+| Display                 | 6.95 inches, 114.7 cm2 (~83.7% screen-to-body ratio)            |
 | Fingerprint             | Rear-mounted                                                    |
 | Sensors                 | Fingerprint (rear-mounted), accelerometer, gyro, proximity      |
 
 ## Device picture
 
-![Infinix Smart 5](https://fdn2.gsmarena.com/vv/pics/infinix/infinix-smart5-3cam-1.jpg)
+![Infinix Note 7](https://fdn2.gsmarena.com/vv/pics/infinix/infinix-note7-1.jpg)

@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/lineage_X657C.mk
+   $(LOCAL_DIR)/lineage_X690B.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_X657C-user \
-    lineage_X657C-userdebug \
-    lineage_X657C-eng
+    lineage_X690B-user \
+    lineage_X690B-userdebug \
+    lineage_X690B-eng

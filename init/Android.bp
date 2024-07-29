@@ -14,9 +14,9 @@
 // limitations under the License.
 //
 cc_library_static {
-    name: "libinit_X657C",
+    name: "libinit_X690B",
     recovery_available: true,
-    srcs: ["init_X657C.cpp"],
+    srcs: ["init_X690B.cpp"],
     include_dirs: [
         "system/core/base/include",
         "system/core/init"

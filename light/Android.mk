@@ -2,7 +2,7 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := android.hardware.light@2.0-service.X657C
+LOCAL_MODULE := android.hardware.light@2.0-service.X690B
 LOCAL_MODULE_STEM := android.hardware.light-service.mediatek
 LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_EXTRA_VNDK_VERSIONS)/bin
 LOCAL_MODULE_RELATIVE_PATH := hw
