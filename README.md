@@ -9,14 +9,14 @@
 | GPU                     | Mali-G52 2EEMC2                                                 |
 | Memory                  | 4/6 GB                                                          |
 | Shipped Android Version | 10.0                                                            |
-| Storage                 | 32/64 GB                                                        |
+| Storage                 | 64/128 GB                                                       |
 | SIM                     | Dual SIM (Nano-SIM, dual stand-by)                              |
 | MicroSD                 | Dedicated Slot                                                  |
 | Battery                 | 5000 mAh Li-Po (non-removable)                                  |
 | Dimensions              | 720 x 1640 pixels, (~258 ppi density)                           |
 | Display                 | 6.95 inches, 114.7 cm2 (~83.7% screen-to-body ratio)            |
 | Fingerprint             | Side-mounted                                                    |
-| Sensors                 | Fingerprint (side-mounted), accelerometer, gyro, proximity      |
+| Sensors                 | Fingerprint (side-mounted), accelerometer, proximity, compass   |
 
 ## Device picture
 
