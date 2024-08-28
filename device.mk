@@ -72,7 +72,7 @@ PRODUCT_COPY_FILES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health-service.X690BC \
+    android.hardware.health-service.X690B \
     android.hardware.health-service.X690B-recovery
 
 # HIDL
