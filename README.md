@@ -15,7 +15,7 @@
 | Battery                 | 5000 mAh Li-Po (non-removable)                                  |
 | Dimensions              | 720 x 1640 pixels, (~258 ppi density)                           |
 | Display                 | 6.95 inches, 114.7 cm2 (~83.7% screen-to-body ratio)            |
-| Fingerprint             | Rear-mounted                                                    |
+| Fingerprint             | Side-mounted                                                    |
 | Sensors                 | Fingerprint (side-mounted), accelerometer, gyro, proximity      |
 
 ## Device picture
