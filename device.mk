@@ -32,7 +32,7 @@ TARGET_SCREEN_HEIGHT := 1640
 
 # TODO: Where is the screen density ? " i put them by mysellf anyway "
 PRODUCT_APPT_CONFIG ;= normal
-PRODUCT_APPT_PREF_CONFIG ;= xxhdpi
+PRODUCT_APPT_PREF_CONFIG ;= xhdpi
 
 # Audio
 PRODUCT_COPY_FILES += \
