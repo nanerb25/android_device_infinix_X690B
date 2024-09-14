@@ -24,12 +24,20 @@ $(call inherit-product, vendor/infinix/X690B/X690B-vendor.mk)
 
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+
+# Boot animation
+TARGET_SCREEN_WIDTH := 720
+TARGET_SCREEN_HEIGHT := 1640
+
+# TODO: Where is the screen density ? " i put them by mysellf anyway "
+PRODUCT_APPT_CONFIG ;= normal
+PRODUCT_APPT_PREF_CONFIG ;= xxhdpi
 
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_configuration.xml
 
-# Bluetooth
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0 \

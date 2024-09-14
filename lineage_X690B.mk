@@ -14,10 +14,6 @@
 # limitations under the License.
 #
 
-# Boot animation
-TARGET_SCREEN_WIDTH := 720
-TARGET_SCREEN_HEIGHT := 1640
-
 # Inherit from merlin device makefile
 $(call inherit-product, device/infinix/X690B/device.mk)
 
@@ -33,10 +29,10 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := X690B
-PRODUCT_NAME := lineage_X690B
+PRODUCT_NAME := lineage_X690B-GL
 PRODUCT_BRAND := Infinix
 PRODUCT_MODEL := Infinix Note 7
-PRODUCT_MANUFACTURER := Infinix
+PRODUCT_MANUFACTURER := INFINIX MOBILITY LIMITED
 
 PRODUCT_GMS_CLIENTID_BASE := android-infinix
 TARGET_VENDOR := infinix
